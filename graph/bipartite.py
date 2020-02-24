@@ -3,9 +3,13 @@ Is graph bipartite?
 
 Given an undirected graph, return true if and only if it is bipartite.
 
-Recall that a graph is bipartite if we can split it's set of nodes into two independent subsets A and B such that every edge in the graph has one node in A and another node in B.
+Recall that a graph is bipartite if we can split it's set of nodes into two independent
+subsets A and B such that every edge in the graph has one node in A and another node in B.
 
-The graph is given in the following form: graph[i] is a list of indexes j for which the edge between nodes i and j exists.  Each node is an integer between 0 and graph.length - 1.  There are no self edges or parallel edges: graph[i] does not contain i, and it doesn't contain any element twice.
+The graph is given in the following form: graph[i] is a list of indexes j for which the
+edge between nodes i and j exists.  Each node is an integer between 0 and graph.length - 1.
+There are no self edges or parallel edges:
+graph[i] does not contain i, and it doesn't contain any element twice.
 
 Example 1:
 Input: [[1,3], [0,2], [1,3], [0,2]]
@@ -41,14 +45,14 @@ from collections import deque
 class Solution:
     def isBipartite(self, graph: List[List[int]]) -> bool:
         color = {}
-        
+
         # BFS for each node
         for source_node, _ in enumerate(graph):
             if source_node not in color:
                 color[source_node] = 0
                 queue = deque([source_node])
                 while queue:
-                    node = queue.popleft() 
+                    node = queue.popleft()
                     for neighbor in graph[node]:
                         if neighbor not in color:
                             color[neighbor] = color[node] ^ 1
@@ -57,6 +61,6 @@ class Solution:
                             # unable to color graph using 2 colors
                             # hence not bipartite
                             return False
-        
+
         return True
 
