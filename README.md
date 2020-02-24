@@ -5,7 +5,7 @@ This repo holds solutions (Python) to practice problems I find on [LeetCode](htt
 * [Subarray sum equals k](arrays_and_strings/subarray_sum_equals_k.py) 
 
 ## Trees 
-### Traversals
+* **Traversals**
     * [Inorder](binary_tree/traversal/inorder.py)  
     * [Preorder](binary_tree/traversal/preorder.py)  
     * [Postorder](binary_tree/traversal/postorder.py)  
