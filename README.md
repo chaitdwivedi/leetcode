@@ -6,14 +6,15 @@ This repo holds solutions (Python) to practice problems I find on [LeetCode](htt
 
 ## Trees 
 * **Traversals**
-    * [Inorder](binary_tree/traversal/inorder.py)  
-    * [Preorder](binary_tree/traversal/preorder.py)  
-    * [Postorder](binary_tree/traversal/postorder.py)  
-    * [Level Order](binary_tree/traversal/levelorder.py)  
-* [Is Binary Tree Symmetric?](binary_tree/symmetric_tree.py)  
-* [PathSum](binary_tree/pathsum.py)  
-* [Count Unival Trees](binary_tree/count_unival_trees.py)  
-* [Binary Seach Tree Iterator](binary_tree/bst_iterator.py)  
+    * [Inorder](trees/traversal/inorder.py)  
+    * [Preorder](trees/traversal/preorder.py)  
+    * [Postorder](trees/traversal/postorder.py)  
+    * [Level Order](trees/traversal/levelorder.py)  
+* [Is Binary Tree Symmetric?](trees/symmetric_tree.py)  
+* [PathSum](trees/pathsum.py)  
+* [Count Unival Trees](trees/count_unival_trees.py)  
+* [Binary Seach Tree Iterator](trees/bst_iterator.py)  
+* [Map Sum Pairs](trees/map_sum_pairs.py)  
 
 
 ## Graphs 
