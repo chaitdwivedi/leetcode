@@ -13,6 +13,8 @@ This repo holds solutions (Python) to practice problems I find on [LeetCode](htt
 * [Is Binary Tree Symmetric?](binary_tree/symmetric_tree.py)  
 * [PathSum](binary_tree/pathsum.py)  
 * [Count Unival Trees](binary_tree/count_unival_trees.py)  
+* [Binary Seach Tree Iterator](binary_tree/bst_iterator.py)  
+
 
 ## Graphs 
 * [Is Graph Bipartite?](graph/bipartite.py) 
