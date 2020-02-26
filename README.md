@@ -15,6 +15,7 @@ This repo holds solutions (Python) to practice problems I find on [LeetCode](htt
 * [Count Unival Trees](trees/count_unival_trees.py)  
 * [Binary Seach Tree Iterator](trees/bst_iterator.py)  
 * [Map Sum Pairs](trees/map_sum_pairs.py)  
+* [Serialize and Deserialize Binary Tree](trees/serialize_deserialize.py.py)
 
 
 ## Graphs 
