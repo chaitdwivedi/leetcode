@@ -3,6 +3,9 @@ This repo holds solutions (Python) to practice problems I find on [LeetCode](htt
 
 ## Arrays and Strings 
 * [Subarray sum equals k](arrays_and_strings/subarray_sum_equals_k.py) 
+* [Partition Equal Subset Sum](arrays_and_strings/partition_equal_subset_sum.py)
+* [Find all Anagrams in a String](arrays_and_strings/find_all_anagrams_in_string.py)
+* [Letter Combinations of a Phone Number](arrays_and_strings/letter_combinations_of_a_phone_number.py)
 
 ## Trees 
 * **Traversals**
