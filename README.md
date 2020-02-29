@@ -6,6 +6,8 @@ This repo holds solutions (Python) to practice problems I find on [LeetCode](htt
 * [Partition Equal Subset Sum](arrays_and_strings/partition_equal_subset_sum.py)
 * [Find all Anagrams in a String](arrays_and_strings/find_all_anagrams_in_string.py)
 * [Letter Combinations of a Phone Number](arrays_and_strings/letter_combinations_of_a_phone_number.py)
+* [Integer to English Words](arrays_and_strings/integer_to_english_words.py)
+
 
 ## Trees 
 * **Traversals**
@@ -19,6 +21,7 @@ This repo holds solutions (Python) to practice problems I find on [LeetCode](htt
 * [Binary Seach Tree Iterator](trees/bst_iterator.py)  
 * [Map Sum Pairs](trees/map_sum_pairs.py)  
 * [Serialize and Deserialize Binary Tree](trees/serialize_deserialize.py)
+* [Diameter of Binary Tree](trees/diameter_binary_tree.py)
 
 
 ## Graphs 
