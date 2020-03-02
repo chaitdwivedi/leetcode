@@ -7,6 +7,7 @@ This repo holds solutions (Python) to practice problems I find on [LeetCode](htt
 * [Find all Anagrams in a String](arrays_and_strings/find_all_anagrams_in_string.py)
 * [Letter Combinations of a Phone Number](arrays_and_strings/letter_combinations_of_a_phone_number.py)
 * [Integer to English Words](arrays_and_strings/integer_to_english_words.py)
+* [Minimum Window Substring](arrays_and_strings/minium_window_substring.py)
 
 
 ## Trees 
