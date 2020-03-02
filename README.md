@@ -27,3 +27,8 @@ This repo holds solutions (Python) to practice problems I find on [LeetCode](htt
 
 ## Graphs 
 * [Is Graph Bipartite?](graph/bipartite.py) 
+* [Number of Islands](graph/number_of_islands.py) 
+
+Number | Title | Group
+--- | --- | --- 
+[1](https://leetcode.com/problems/two-sum/) | [Two Sum](arrays_and_strings/two_sum.py) | [Arrays and Strings](arrays_and_strings)
