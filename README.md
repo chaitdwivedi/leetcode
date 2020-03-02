@@ -11,7 +11,10 @@ Question | Solution | Group
 --- | --- | --- 
 **1-99**|
 [1](https://leetcode.com/problems/two-sum/) | [Two Sum](arrays_and_strings/two_sum.py) | [Arrays and Strings](arrays_and_strings)
+[15](https://leetcode.com/problems/3sum/) | [3Sum](arrays_and_strings/3sum.py) | [Arrays and Strings](arrays_and_strings)
 [17](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [Letter Combinations of a Phone Number](arrays_and_strings/letter_combinations_of_a_phone_number.py) | [Arrays and Strings](arrays_and_strings)
+[34](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Find first and last position of element in sorted array](arrays_and_strings/find_first_and_last_position_of_element_in_sorted_array.py) | [Arrays and Strings](arrays_and_strings)
+[49](https://leetcode.com/problems/group-anagrams/) | [Group Anagrams](arrays_and_strings/group_anagrams.py) | [Arrays and Strings](arrays_and_strings)
 [76](https://leetcode.com/problems/minimum-window-substring/) | [Minimum Window Substring](arrays_and_strings/minium_window_substring.py) | [Arrays and Strings](arrays_and_strings)
 [94](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Binary Tree Inorder Traversal](trees/traversal/inorder.py) | [Tree traversals](trees/traversal)
 **100-199**|
