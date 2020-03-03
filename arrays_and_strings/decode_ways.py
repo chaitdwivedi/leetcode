@@ -21,7 +21,65 @@ Output: 3
 Explanation: It could be decoded as "BZ" (2 26), "VF" (22 6), or "BBF" (2 2 6).
 '''
 class Solution:
+    def numDecodings_rec(self, s: str) -> int:
+        '''Plain recursive solution - time limit exceeds'''
+        def helper(s, pointer):
+            if pointer >= len(s):
+                return 1
+
+            decodepointer_1 = pointer + 1
+            decodepointer_2 = pointer + 2
+            result = 0
+
+            # At every point you can either have a single digit or double digit decoding
+            # if single digit move the pointer by 1
+            # if double digit move the pointer by 2
+            if decodepointer_1 <= len(s):
+                single = int(s[pointer:decodepointer_1])
+                if single >= 1:
+                    result += helper(s, pointer + 1)
+
+            if decodepointer_2 <= len(s):
+                double = int(s[pointer:decodepointer_2])
+                if double >= 10 and double <= 26:
+                    result += helper(s, pointer + 2)
+
+            return result
+
+        return helper(s, 0)
+
+    def numDecodings_cached(self, s: str) -> int:
+        '''Recursive solution with cached calls using dp array'''
+        def helper(s, pointer, dp):
+            if pointer >= len(s):
+                return 1
+
+            # reduce work by using dp array
+            if dp[pointer]:
+                return dp[pointer]
+
+            decodepointer_1 = pointer + 1
+            decodepointer_2 = pointer + 2
+            result = 0
+
+            if decodepointer_1 <= len(s):
+                single = int(s[pointer:decodepointer_1])
+                if single >= 1:
+                    result += helper(s, pointer + 1, dp)
+
+            if decodepointer_2 <= len(s):
+                double = int(s[pointer:decodepointer_2])
+                if double >= 10 and double <= 26:
+                    result += helper(s, pointer + 2, dp)
+
+            dp[pointer] = result
+            return result
+
+        dp = [None] * len(s)
+        return helper(s, 0, dp)
+
     def numDecodings(self, s: str) -> int:
+        '''Best single pass solution'''
         output = [0] * (len(s)+1)
         output[0] = 1
         output[1] = 1 if int(s[0]) > 0 else 0
@@ -38,3 +96,4 @@ class Solution:
             i += 1
 
         return output[-1]
+
