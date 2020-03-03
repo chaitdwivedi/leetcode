@@ -16,6 +16,8 @@ Question | Solution | Group
 [34](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Find first and last position of element in sorted array](arrays_and_strings/find_first_and_last_position_of_element_in_sorted_array.py) | [Arrays and Strings](arrays_and_strings)
 [49](https://leetcode.com/problems/group-anagrams/) | [Group Anagrams](arrays_and_strings/group_anagrams.py) | [Arrays and Strings](arrays_and_strings)
 [76](https://leetcode.com/problems/minimum-window-substring/) | [Minimum Window Substring](arrays_and_strings/minium_window_substring.py) | [Arrays and Strings](arrays_and_strings)
+[86](https://leetcode.com/problems/monotonic-array/) | [Monotoic Array](arrays_and_strings/monotonic_array.py) | [Arrays and Strings](arrays_and_strings)
+[91](https://leetcode.com/problems/decode-ways/) | [Decode Ways](arrays_and_strings/decode_ways.py) | [Arrays and Strings](arrays_and_strings)
 [94](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Binary Tree Inorder Traversal](trees/traversal/inorder.py) | [Tree traversals](trees/traversal)
 **100-199**|
 [101](https://leetcode.com/problems/symmetric-tree/) | [Symmetric Tree](trees/symmetric_tree.py) | [Trees](trees)
@@ -38,4 +40,6 @@ Question | Solution | Group
 **600-699**|
 [677](https://leetcode.com/problems/map-sum-pairs/) | [Map Sum Pairs](trees/map_sum_pairs.py) | [Trees](trees)
 **700-799**|
+[721](https://leetcode.com/problems/accounts-merge/) | [Accounts Merge](arrays_and_strings/accounts_merge.py) | [Graph](graph)
 [785](https://leetcode.com/problems/is-graph-bipartite/) | [Is Graph Bipartite](arrays_and_strings/bipartite.py) | [Graph](graph)
+[986](https://leetcode.com/problems/interval-list-intersections/) | [Interval List Intersections](arrays_and_strings/interval_list_intersections.py) | [Arrays and String](arrays_and_strings)
