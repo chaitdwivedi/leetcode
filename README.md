@@ -18,6 +18,7 @@ Question | Solution
 [20](https://leetcode.com/problems/valid-parentheses/) | [Valid Parentheses](arrays_and_strings/valid_parentheses.py)
 [34](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Find first and last position of element in sorted array](arrays_and_strings/find_first_and_last_position_of_element_in_sorted_array.py)
 [49](https://leetcode.com/problems/group-anagrams/) | [Group Anagrams](arrays_and_strings/group_anagrams.py)
+[55](https://leetcode.com/problems/jump-game/) | [Jump Game](arrays_and_strings/jump_game.py)
 [66](https://leetcode.com/problems/plus-one/) | [Plus One](arrays_and_strings/plus_one.py)
 [76](https://leetcode.com/problems/minimum-window-substring/) | [Minimum Window Substring](arrays_and_strings/minium_window_substring.py)
 [86](https://leetcode.com/problems/monotonic-array/) | [Monotoic Array](arrays_and_strings/monotonic_array.py)
