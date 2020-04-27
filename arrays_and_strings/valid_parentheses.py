@@ -34,11 +34,12 @@ class Solution:
         stack = []
         open_ = ['(', '{', '[']
         close_ = [')', '}', ']']
-        match = {
-            ')': '(',
-            ']': '[',
-            '}': '{',
-        }
+        # match = {
+        #     ')': '(',
+        #     ']': '[',
+        #     '}': '{',
+        # }
+        match = {o: c for o, c in zip(open_, close_)}
         for bracket in s:
             if bracket in open_:
                 stack.append(bracket)
