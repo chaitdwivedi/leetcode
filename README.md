@@ -28,6 +28,7 @@ Question | Solution
 [112](https://leetcode.com/problems/path-sum/) | [Path Sum](trees/pathsum.py)
 [144](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Binary Tree Preorder Traversal](trees/traversal/preorder.py)
 [145](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Binary Tree Postorder Traversal](trees/traversal/postorder.py)
+[163](https://leetcode.com/problems/missing-ranges/) | [Missing Ranges](arrays_and_strings/missing_ranges.py)
 [173](https://leetcode.com/problems/binary-search-tree-iterator/) | [Binary Search Tree Iterator](trees/bst_iterator.py)
 **200-299**|
 [200](https://leetcode.com/problems/number-of-islands/) | [Number of Islands](arrays_and_strings/number_of_islands.py)
