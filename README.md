@@ -11,6 +11,7 @@ Question | Solution
 --- | ---
 **1-99**|
 [1](https://leetcode.com/problems/two-sum/) | [Two Sum](arrays_and_strings/two_sum.py)
+[2](https://leetcode.com/problems/add-two-numbers/) | [Add Two Numbers](arrays_and_strings/add_two_numbers.py)
 [3](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Longest Substring without Repeating Characters](arrays_and_strings/longest_substring_without_repeating_characters.py)
 [11](https://leetcode.com/problems/container-with-most-water/) | [Container with most water](arrays_and_strings/container_with_most_water.py)
 [15](https://leetcode.com/problems/3sum/) | [3Sum](arrays_and_strings/3sum.py)
