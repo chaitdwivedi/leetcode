@@ -3,6 +3,7 @@ This repo holds solutions (Python) to practice problems I find on [LeetCode](htt
 
 ## Quick Access
 * [Arrays and String](arrays_and_strings)
+* [Linked Lists](linked_lists)
 * [Trees](trees)
 * [Tree Traversal](trees/traversal)
 * [Graph](graph)
