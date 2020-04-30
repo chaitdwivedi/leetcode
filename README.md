@@ -32,6 +32,7 @@ Question | Solution
 [101](https://leetcode.com/problems/symmetric-tree/) | [Symmetric Tree](trees/symmetric_tree.py)
 [102](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Binary Tree Level Order Traversal](trees/traversal/levelorder.py)
 [112](https://leetcode.com/problems/path-sum/) | [Path Sum](trees/pathsum.py)
+[138](https://leetcode.com/problems/copy-list-with-random-pointer/) | [Copy List with Random Pointer](linked_lists/copy_list_with_random_pointer.py)
 [144](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Binary Tree Preorder Traversal](trees/traversal/preorder.py)
 [145](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Binary Tree Postorder Traversal](trees/traversal/postorder.py)
 [163](https://leetcode.com/problems/missing-ranges/) | [Missing Ranges](arrays_and_strings/missing_ranges.py)
