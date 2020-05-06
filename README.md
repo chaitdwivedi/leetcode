@@ -45,6 +45,8 @@ Question | Solution
 [250](https://leetcode.com/problems/count-unival-subtrees/) | [Count Unival Subtrees](trees/count_unival_trees.py)
 [273](https://leetcode.com/problems/integer-to-english-words/) | [Integer to English Words](arrays_and_strings/integer_to_english_words.py)
 [297](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | [Serialize and Deserialize Binary Tree](trees/serialize_deserialize.py)
+**300-399**|
+[329](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | [Longest Increasing Path in a Matrix](graph/longest_increasing_path_in_a_matrix.py)
 **400-499**|
 [416](https://leetcode.com/problems/partition-equal-subset-sum/) | [Partition Equal Subset Sum](arrays_and_strings/partition_equal_subset_sum.py)
 [438](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [Find All Anagrams in a String](arrays_and_strings/find_all_anagrams_in_string.py)
