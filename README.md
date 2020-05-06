@@ -41,6 +41,7 @@ Question | Solution
 [200](https://leetcode.com/problems/number-of-islands/) | [Number of Islands](arrays_and_strings/number_of_islands.py)
 [207](https://leetcode.com/problems/course-schedule/) | [Course Schedule](graph/course_schedule.py)
 [210](https://leetcode.com/problems/course-schedule-ii/) | [Course Schedule II](graph/course_schedule_ii.py)
+[222](https://leetcode.com/problems/count-complete-tree-nodes/) | [Count Complete Tree Nodes](trees/count_complete_tree_nodes.py)
 [250](https://leetcode.com/problems/count-unival-subtrees/) | [Count Unival Subtrees](trees/count_unival_trees.py)
 [273](https://leetcode.com/problems/integer-to-english-words/) | [Integer to English Words](arrays_and_strings/integer_to_english_words.py)
 [297](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | [Serialize and Deserialize Binary Tree](trees/serialize_deserialize.py)
