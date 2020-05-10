@@ -54,6 +54,7 @@ Question | Solution
 **500-599**|
 [543](https://leetcode.com/problems/diameter-of-binary-tree/) | [Diameter of Binary Tree](trees/diameter_binary_tree.py)
 [560](https://leetcode.com/problems/subarray-sum-equals-k/) | [Subarray_sum_equals_k](arrays_and_strings/subarray_sum_equals_k.py)
+[562](https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/) | [Longest Line of Consecutive One In Matrix](graph/longest_line_of_consecutive_one_in_matrix.py)
 **600-699**|
 [677](https://leetcode.com/problems/map-sum-pairs/) | [Map Sum Pairs](trees/map_sum_pairs.py)
 **700-799**|
