@@ -64,3 +64,5 @@ Question | Solution
 [844](https://leetcode.com/problems/backspace-string-compare/) | [Backspace String Compare](arrays_and_strings/backspace_string_compare.py)
 **900-999**|
 [986](https://leetcode.com/problems/interval-list-intersections/) | [Interval List Intersections](arrays_and_strings/interval_list_intersections.py)
+**1100-1199**|
+[1146](https://leetcode.com/problems/snapshot-array/) | [Snapshot Array](arrays_and_strings/snapshot_array.py)
