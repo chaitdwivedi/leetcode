@@ -24,7 +24,7 @@ Question | Solution
 [49](https://leetcode.com/problems/group-anagrams/) | [Group Anagrams](arrays_and_strings/group_anagrams.py)
 [55](https://leetcode.com/problems/jump-game/) | [Jump Game](arrays_and_strings/jump_game.py)
 [66](https://leetcode.com/problems/plus-one/) | [Plus One](arrays_and_strings/plus_one.py)
-[76](https://leetcode.com/problems/minimum-window-substring/) | [Minimum Window Substring](arrays_and_strings/minium_window_substring.py)
+[76](https://leetcode.com/problems/minimum-window-substring/) | [Minimum Window Substring](arrays_and_strings/minimum_window_substring.py)
 [86](https://leetcode.com/problems/monotonic-array/) | [Monotoic Array](arrays_and_strings/monotonic_array.py)
 [91](https://leetcode.com/problems/decode-ways/) | [Decode Ways](arrays_and_strings/decode_ways.py)
 [94](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Binary Tree Inorder Traversal](trees/traversal/inorder.py)
