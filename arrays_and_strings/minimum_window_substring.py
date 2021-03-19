@@ -18,22 +18,16 @@ class Solution:
             '''Read in a string and build a count map'''
             count_map = {}
             for char in inp_str:
-                count_map[char] = count_map[char] + 1 if char in count_map else 1
+                count_map[char] = count_map.get(char, 0) + 1
             return count_map
 
 
         def hasT(win_map, t_map):
             '''Check if the given window map has the t sring'''
-            for char in t_map:
-                if char not in win_map:
-                    return False
-                elif win_map[char] < t_map[char]:
+            for char, count in t_map.items():
+                if win_map.get(char, 0) < count:
                     return False
             return True
-
-        def get_min_str(a, b):
-            '''Return minimum string of a, b'''
-            return a if len(a) < len(b) else b
 
         if not s or not t:
             return ''
@@ -43,13 +37,15 @@ class Solution:
 
         left, right = 0, 0
         found = False
-        min_str = s
+        min_str = ""
         win_map = {s[0] : 1}
         while right < len(s):
             window = s[left:right+1]
             if hasT(win_map, t_map):
                 found = True
-                min_str = get_min_str(min_str, window)
+                if not min_str or len(window) < len(min_str):
+                    min_str = window
+    
                 # reduce count of left char from window map
                 win_map[s[left]] = win_map[s[left]] - 1
                 left += 1
@@ -57,6 +53,6 @@ class Solution:
                 right += 1
                 if right < len(s):
                     # add count of right char in window map
-                    win_map[s[right]] = win_map[s[right]] + 1 if s[right] in win_map else 1
+                    win_map[s[right]] = win_map.get(s[right], 0) + 1
 
-        return min_str if found else ''
+        return min_str
