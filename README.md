@@ -50,6 +50,7 @@ Question | Solution
 [399](https://leetcode.com/problems/evaluate-division/) | [Evaluate Division](graph/evaluate_division.py)
 **400-499**|
 [416](https://leetcode.com/problems/partition-equal-subset-sum/) | [Partition Equal Subset Sum](arrays_and_strings/partition_equal_subset_sum.py)
+[425](https://leetcode.com/problems/word-squares/) | [Word Square](arrays_and_strings/word_squares.py)
 [438](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [Find All Anagrams in a String](arrays_and_strings/find_all_anagrams_in_string.py)
 **500-599**|
 [543](https://leetcode.com/problems/diameter-of-binary-tree/) | [Diameter of Binary Tree](trees/diameter_binary_tree.py)
