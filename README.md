@@ -19,6 +19,7 @@ Question | Solution
 [17](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [Letter Combinations of a Phone Number](arrays_and_strings/letter_combinations_of_a_phone_number.py)
 [19](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [Remove nth node from end of list](linked_lists/remove_nth_node_from_end_of_list.py)
 [20](https://leetcode.com/problems/valid-parentheses/) | [Valid Parentheses](arrays_and_strings/valid_parentheses.py)
+[22](https://leetcode.com/problems/generate-parentheses/) | [Generate Parentheses](arrays_and_strings/generate_parenthesis.py)
 [23](https://leetcode.com/problems/merge-k-sorted-lists/) | [Merge K Sorted Lists](linked_lists/merge_k_sorted_lists.py)
 [34](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Find first and last position of element in sorted array](arrays_and_strings/find_first_and_last_position_of_element_in_sorted_array.py)
 [49](https://leetcode.com/problems/group-anagrams/) | [Group Anagrams](arrays_and_strings/group_anagrams.py)
