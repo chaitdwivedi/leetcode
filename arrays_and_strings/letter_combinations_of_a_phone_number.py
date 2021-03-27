@@ -77,3 +77,42 @@ class Solution:
             return []
         
         return combine(digits)
+
+
+####################
+#
+# Alternate Solution 
+#
+####################
+
+
+def combine(arr1, arr2):
+    combined = []
+    for item1 in arr1:
+        for item2 in arr2:
+            combined.append(f"{item1}{item2}")
+    return combined
+    
+class Solution:
+    def __init__(self):
+        self.phone = {
+            "2": ["a", "b", "c"],
+            "3": ["d", "e", "f"],
+            "4": ["g", "h", "i"],
+            "5": ["j", "k", "l"],
+            "6": ["m", "n", "o"],
+            "7": ["p", "q", "r", "s"],
+            "8": ["t", "u", "v"],
+            "9": ["w", "x", "y", "z"],
+        }
+        
+    def letterCombinations(self, digits: str) -> List[str]:
+        if not digits:
+            return []
+        
+        if digits in self.phone:
+            return self.phone[digits]
+    
+        combined = combine(self.phone[digits[0]], self.letterCombinations(digits[1:]))
+        self.phone[digits] = combined
+        return combined
