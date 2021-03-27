@@ -116,3 +116,45 @@ class Solution:
         combined = combine(self.phone[digits[0]], self.letterCombinations(digits[1:]))
         self.phone[digits] = combined
         return combined
+
+
+####################
+#
+# Backtrack Solution 
+#
+####################
+
+class Solution:
+    def __init__(self):
+        self.phone = {
+            "2": ["a", "b", "c"],
+            "3": ["d", "e", "f"],
+            "4": ["g", "h", "i"],
+            "5": ["j", "k", "l"],
+            "6": ["m", "n", "o"],
+            "7": ["p", "q", "r", "s"],
+            "8": ["t", "u", "v"],
+            "9": ["w", "x", "y", "z"],
+        }
+        
+    def letterCombinations(self, digits: str) -> List[str]:
+        
+        def backtrack(index, combination=[]):
+            if len(combination) == len(digits):
+                combination = "".join(combination)
+                results.append(combination)
+                return 
+            
+            for letter in self.phone[digits[index]]:
+                combination.append(letter)
+                backtrack(index + 1, combination)
+                combination.pop()
+            
+            
+        if not digits:
+                return []
+            
+        results = []    
+        backtrack(index=0, combination=[])
+        return results 
+        
