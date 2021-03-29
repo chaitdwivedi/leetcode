@@ -85,3 +85,65 @@ class Codec:
 # Your Codec object will be instantiated and called as such:
 # codec = Codec()
 # codec.deserialize(codec.serialize(root))
+
+########################################
+#
+# Using BFS and queue
+#
+########################################
+
+class Codec:
+
+    def serialize(self, root):
+        """Encodes a tree to a single string.
+
+        :type root: TreeNode
+        :rtype: str
+        """
+
+        q = deque([root])
+        serial = []
+        while q:
+            current = q.popleft()
+
+            if current is None:
+                serial.append("None")
+            else:
+                serial.append(str(current.val))
+                q.append(current.left)
+                q.append(current.right)
+
+        print(",".join(serial))
+        return ",".join(serial)
+
+
+    def deserialize(self, data):
+        """Decodes your encoded data to tree.
+
+        :type data: str
+        :rtype: TreeNode
+        """
+        if data == "None":
+            return
+
+        data_deque = deque(data.split(","))
+
+        root = TreeNode(data_deque.popleft())
+
+        q = deque([root])
+
+        while q:
+            current = q.popleft()
+
+            left = data_deque.popleft()
+            right = data_deque.popleft()
+
+            if left != "None":
+                current.left = TreeNode(left)
+                q.append(current.left)
+
+            if right != "None":
+                current.right = TreeNode(right)
+                q.append(current.right)
+
+        return root

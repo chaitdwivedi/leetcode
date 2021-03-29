@@ -59,3 +59,43 @@ class Solution:
                     dfs(grid, i, j)
         
         return count
+
+########################################
+#
+# Solution using loop for directions
+#
+########################################
+
+class Solution:
+    def numIslands(self, grid: List[List[str]]) -> int:
+        def in_grid(r, c):
+            '''Check if a grid point lies within grid range'''
+            if r < 0 or c < 0 or r >= rows or c >= columns:
+                return False
+            return True
+
+        def discover_island(i, j):
+            '''Use DSF (resursion) to iterate over all connected island'''
+            grid[i][j] = "0"  # traveled
+
+            for i_offset, j_offset in directions:
+                new_i, new_j = i + i_offset, j + j_offset
+                if in_grid(new_i, new_j) and grid[new_i][new_j] == "1":
+                    discover_island(new_i, new_j)
+
+        directions = [
+            (-1, 0),
+            (1, 0),
+            (0, -1),
+            (0, 1),
+        ]
+
+        count = 0
+        rows, columns = len(grid), len(grid[0])
+        for i in range(rows):
+            for j in range(columns):
+                if grid[i][j] == "1":
+                    count += 1
+                    discover_island(i, j)
+
+        return count

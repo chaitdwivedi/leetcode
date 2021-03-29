@@ -9,34 +9,34 @@ There may be multiple correct orders, you just need to return one of them. If it
 
 Example 1:
 
-Input: 2, [[1,0]] 
+Input: 2, [[1,0]]
 Output: [0,1]
-Explanation: There are a total of 2 courses to take. To take course 1 you should have finished   
+Explanation: There are a total of 2 courses to take. To take course 1 you should have finished
              course 0. So the correct course order is [0,1] .
 Example 2:
 
 Input: 4, [[1,0],[2,0],[3,1],[3,2]]
 Output: [0,1,2,3] or [0,2,1,3]
-Explanation: There are a total of 4 courses to take. To take course 3 you should have finished both     
-             courses 1 and 2. Both courses 1 and 2 should be taken after you finished course 0. 
+Explanation: There are a total of 4 courses to take. To take course 3 you should have finished both
+             courses 1 and 2. Both courses 1 and 2 should be taken after you finished course 0.
              So one correct course order is [0,1,2,3]. Another correct ordering is [0,2,1,3] .
 Note:
 
 The input prerequisites is a graph represented by a list of edges, not adjacency matrices. Read more about how a graph is represented.
 You may assume that there are no duplicate edges in the input prerequisites.
 '''
-from collections import defaultdict 
+from collections import defaultdict
 class Solution:
     def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
         # build dependency graph
         graph = defaultdict(list)
         for deps in prerequisites:
             graph[deps[0]].append(deps[1])
-        
+
         visited = [False] * numCourses
         resolved = [False] * numCourses
         resolution_order = []
-        
+
         for i in range(numCourses):
             stack = [i]
             while stack:
@@ -50,9 +50,49 @@ class Solution:
                 else:
                     # to handle duplicates
                     if not resolved[top]:
-                        resolved[top] = True 
+                        resolved[top] = True
                         resolution_order.append(top)
                     stack.pop()
-        
+
         return resolution_order
-        
+
+#################
+#
+# Indegree BFS
+#
+#################
+
+class Solution:
+    '''Use indegree with BFS
+
+    Note - the graph building is opposite in this case:
+    i.e. prereq: [1,0] means 1 is dependent of 0
+    so in graph we store it as 0 -> 1
+    signifying resolution order
+
+    If final ordering is missing elements - it measn we have a loop'''
+    def findOrder(self, numCourses, prerequisites):
+        graph = defaultdict(list)
+        indegrees = [0] * numCourses
+        q = deque()
+
+        for course, dep in prerequisites:
+            graph[dep].append(course)
+            indegrees[course] += 1
+
+        for i, indegree in enumerate(indegrees):
+            if indegree == 0:
+                q.append(i)
+
+        order = []
+        while q:
+            current = q.popleft()
+            order.append(current)
+            for neighbor in graph[current]:
+                indegrees[neighbor] -= 1
+                if indegrees[neighbor] == 0:
+                    q.append(neighbor)
+
+        if len(order) != numCourses:
+            return []
+        return order

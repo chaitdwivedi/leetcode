@@ -66,3 +66,61 @@ class Solution:
                 longest_path = max(longest_path, dfs_path(matrix, i, j, cache))
         
         return longest_path
+
+    ##################
+    # Using loop 
+    # in directions
+    ##################
+
+    def longestIncreasingPath(self, matrix: List[List[int]]) -> int:
+        '''DFS + memoization'''
+        
+        def in_matrix(r, c):
+            if r < 0 or c < 0 or r >= len(matrix) or c >= len(matrix[0]):
+                return False 
+            return True
+        
+        def find_path(i, j):
+            # check memory
+            if self.mem[i][j] != -1:
+                return self.mem[i][j]
+            
+            current = matrix[i][j]
+           
+            # create list to hold values for paths
+            paths = [0] * 4
+            
+            for index, direction in enumerate(directions):
+                i_off, j_off = direction
+                new_i, new_j = i + i_off, j + j_off
+                
+                if in_matrix(new_i, new_j) and matrix[new_i][new_j] > current:
+                    paths[index] = find_path(new_i, new_j)
+            
+            ans = max(paths) + 1
+            # update memory
+            self.mem[i][j] = ans
+            return ans
+    
+    
+        directions = [
+            (-1, 0),
+            (1, 0),
+            (0, -1),
+            (0, 1),
+        ]
+        max_path = 0
+        
+        # setup memory for holding longest path for particular index
+        self.mem = []
+        for i in range(len(matrix)):
+            self.mem.append([-1] * len(matrix[0]))
+   
+        # call DFS for all indexes
+        for i in range(len(matrix)):
+            for j in range(len(matrix[0])):
+                path = find_path(i, j)
+                max_path = max(max_path, path)
+        
+        return max_path
+            
