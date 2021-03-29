@@ -63,6 +63,7 @@ Question | Solution
 [721](https://leetcode.com/problems/accounts-merge/) | [Accounts Merge](arrays_and_strings/accounts_merge.py)
 [785](https://leetcode.com/problems/is-graph-bipartite/) | [Is Graph Bipartite](arrays_and_strings/bipartite.py)
 **800-899**|
+[843](https://leetcode.com/problems/guess-the-word/) | [Guess the Word](arrays_and_strings/guess_the_word.py)
 [844](https://leetcode.com/problems/backspace-string-compare/) | [Backspace String Compare](arrays_and_strings/backspace_string_compare.py)
 **900-999**|
 [986](https://leetcode.com/problems/interval-list-intersections/) | [Interval List Intersections](arrays_and_strings/interval_list_intersections.py)
