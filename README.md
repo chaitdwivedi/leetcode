@@ -1,16 +1,16 @@
 # Practice Repository
 This repo holds solutions (Python) to practice problems I find on [LeetCode](https://leetcode.com/)
 
-## Quick Access
+## Categories
 * [Arrays and String](arrays_and_strings)
 * [Linked Lists](linked_lists)
 * [Trees](trees)
 * [Tree Traversal](trees/traversal)
 * [Graph](graph)
 
+## 1-99
 Question | Solution
 --- | ---
-**1-99**|
 [1](https://leetcode.com/problems/two-sum/) | [Two Sum](arrays_and_strings/two_sum.py)
 [2](https://leetcode.com/problems/add-two-numbers/) | [Add Two Numbers](linked_lists/add_two_numbers.py)
 [3](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Longest Substring without Repeating Characters](arrays_and_strings/longest_substring_without_repeating_characters.py)
@@ -29,7 +29,10 @@ Question | Solution
 [86](https://leetcode.com/problems/monotonic-array/) | [Monotoic Array](arrays_and_strings/monotonic_array.py)
 [91](https://leetcode.com/problems/decode-ways/) | [Decode Ways](arrays_and_strings/decode_ways.py)
 [94](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Binary Tree Inorder Traversal](trees/traversal/inorder.py)
-**100-199**|
+
+## 100-199
+Question | Solution
+--- | ---
 [101](https://leetcode.com/problems/symmetric-tree/) | [Symmetric Tree](trees/symmetric_tree.py)
 [102](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Binary Tree Level Order Traversal](trees/traversal/levelorder.py)
 [112](https://leetcode.com/problems/path-sum/) | [Path Sum](trees/pathsum.py)
@@ -40,7 +43,10 @@ Question | Solution
 [145](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Binary Tree Postorder Traversal](trees/traversal/postorder.py)
 [163](https://leetcode.com/problems/missing-ranges/) | [Missing Ranges](arrays_and_strings/missing_ranges.py)
 [173](https://leetcode.com/problems/binary-search-tree-iterator/) | [Binary Search Tree Iterator](trees/bst_iterator.py)
-**200-299**|
+
+## 200-299
+Question | Solution
+--- | ---
 [200](https://leetcode.com/problems/number-of-islands/) | [Number of Islands](arrays_and_strings/number_of_islands.py)
 [207](https://leetcode.com/problems/course-schedule/) | [Course Schedule](graph/course_schedule.py)
 [210](https://leetcode.com/problems/course-schedule-ii/) | [Course Schedule II](graph/course_scheule_ii.py)
@@ -50,26 +56,50 @@ Question | Solution
 [250](https://leetcode.com/problems/count-unival-subtrees/) | [Count Unival Subtrees](trees/count_unival_trees.py)
 [273](https://leetcode.com/problems/integer-to-english-words/) | [Integer to English Words](arrays_and_strings/integer_to_english_words.py)
 [297](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | [Serialize and Deserialize Binary Tree](trees/serialize_deserialize.py)
-**300-399**|
+
+## 300-399
+Question | Solution
+--- | ---
 [329](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | [Longest Increasing Path in a Matrix](graph/longest_increasing_path_in_a_matrix.py)
 [399](https://leetcode.com/problems/evaluate-division/) | [Evaluate Division](graph/evaluate_division.py)
-**400-499**|
+
+## 400-499
+Question | Solution
+--- | ---
 [416](https://leetcode.com/problems/partition-equal-subset-sum/) | [Partition Equal Subset Sum](arrays_and_strings/partition_equal_subset_sum.py)
 [425](https://leetcode.com/problems/word-squares/) | [Word Square](arrays_and_strings/word_squares.py)
 [438](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [Find All Anagrams in a String](arrays_and_strings/find_all_anagrams_in_string.py)
-**500-599**|
+
+## 500-599
+Question | Solution
+--- | ---
 [543](https://leetcode.com/problems/diameter-of-binary-tree/) | [Diameter of Binary Tree](trees/diameter_binary_tree.py)
 [560](https://leetcode.com/problems/subarray-sum-equals-k/) | [Subarray_sum_equals_k](arrays_and_strings/subarray_sum_equals_k.py)
 [562](https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/) | [Longest Line of Consecutive One In Matrix](graph/longest_line_of_consecutive_one_in_matrix.py)
-**600-699**|
+
+## 600-699
+Question | Solution
+--- | ---
 [677](https://leetcode.com/problems/map-sum-pairs/) | [Map Sum Pairs](trees/map_sum_pairs.py)
-**700-799**|
+
+## 700-799
+Question | Solution
+--- | ---
 [721](https://leetcode.com/problems/accounts-merge/) | [Accounts Merge](arrays_and_strings/accounts_merge.py)
 [785](https://leetcode.com/problems/is-graph-bipartite/) | [Is Graph Bipartite](arrays_and_strings/bipartite.py)
-**800-899**|
+
+## 800-899
+Question | Solution
+--- | ---
 [843](https://leetcode.com/problems/guess-the-word/) | [Guess the Word](arrays_and_strings/guess_the_word.py)
 [844](https://leetcode.com/problems/backspace-string-compare/) | [Backspace String Compare](arrays_and_strings/backspace_string_compare.py)
-**900-999**|
+
+## 900-999
+Question | Solution
+--- | ---
 [986](https://leetcode.com/problems/interval-list-intersections/) | [Interval List Intersections](arrays_and_strings/interval_list_intersections.py)
-**1100-1199**|
+
+## 1100-1199
+Question | Solution
+--- | ---
 [1146](https://leetcode.com/problems/snapshot-array/) | [Snapshot Array](arrays_and_strings/snapshot_array.py)
