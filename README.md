@@ -38,6 +38,7 @@ Question | Solution
 [112](https://leetcode.com/problems/path-sum/) | [Path Sum](trees/pathsum.py)
 [124](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | [Binary Tree Maximum Path Sum](trees/binary_tree_maximum_path_sum.py)
 [127](https://leetcode.com/problems/word-ladder/) | [Word Ladder](graph/word_ladder.py)
+[128](https://leetcode.com/problems/longest-consecutive-sequence/) | [Longest Consecutive Sequence](arrays_and_strings/longest_consecutive_sequence.py)
 [138](https://leetcode.com/problems/copy-list-with-random-pointer/) | [Copy List with Random Pointer](linked_lists/copy_list_with_random_pointer.py)
 [144](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Binary Tree Preorder Traversal](trees/traversal/preorder.py)
 [145](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Binary Tree Postorder Traversal](trees/traversal/postorder.py)
