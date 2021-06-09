@@ -32,30 +32,37 @@ You may assume that there are no duplicate edges in the input prerequisites.
 from collections import defaultdict
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
-        graph = defaultdict(list)
+        prereq_map = defaultdict(list)
         
         # build dependency graph 
-        for prereq in prerequisites:
-            graph[prereq[0]].append(prereq[1])
+        for course, prereq in prerequisites:
+            prereq_map[course].append(prereq)
         
         visited = [False] * numCourses
         resolved = [False] * numCourses
         
+        def dfs(current):
+            if visited[current]: # detected loop
+                return False 
+            
+            if prereq_map[current] == [] or resolved[current]: # no resolving required
+                return True 
+        
+            visited[current] = True 
+            
+            for pre in prereq_map[current]:
+                if not dfs(pre):
+                    return False 
+                
+            visited[current] = False # backtrack
+            resolved[current] = True  # done resolving
+            return True     
+            
+        
         # perform dfs for each node 
         for i in range(numCourses):
-            stack = [i]
-            while stack:
-                top = stack[-1]
-                if graph[top] and not visited[top]:
-                    for deps in graph[top]:
-                        if visited[deps] and not resolved[deps]:
-                            return False
-                        if not visited[deps]:
-                            stack.append(deps)
-                    visited[top] = True
-                else:
-                    resolved[top] = True 
-                    stack.pop()
-        
+            if not dfs(i):
+                return False
+            
         return True
                     
