@@ -41,6 +41,7 @@ Question | Solution
 [128](https://leetcode.com/problems/longest-consecutive-sequence/) | [Longest Consecutive Sequence](arrays_and_strings/longest_consecutive_sequence.py)
 [138](https://leetcode.com/problems/copy-list-with-random-pointer/) | [Copy List with Random Pointer](linked_lists/copy_list_with_random_pointer.py)
 [144](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Binary Tree Preorder Traversal](trees/traversal/preorder.py)
+[146](https://leetcode.com/problems/lru-cache/) | [LRU Cache](arrays_and_strings/lru_cache.py)
 [145](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Binary Tree Postorder Traversal](trees/traversal/postorder.py)
 [163](https://leetcode.com/problems/missing-ranges/) | [Missing Ranges](arrays_and_strings/missing_ranges.py)
 [173](https://leetcode.com/problems/binary-search-tree-iterator/) | [Binary Search Tree Iterator](trees/bst_iterator.py)
